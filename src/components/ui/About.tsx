@@ -28,26 +28,26 @@ export function About() {
           className="max-w-5xl w-full pointer-events-auto"
         >
           {/* Stats Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 mb-6 md:mb-8">
             {stats.map((stat) => (
               <div
                 key={stat.label}
-                className="glass-effect p-6 rounded-xl text-center"
+                className="glass-effect p-4 md:p-6 rounded-xl text-center"
               >
-                <div className="text-3xl md:text-4xl font-bold text-glow mb-2">
+                <div className="text-2xl md:text-4xl font-bold text-glow mb-2">
                   {stat.value}
                 </div>
-                <div className="text-sm text-gray-400">{stat.label}</div>
+                <div className="text-xs md:text-sm text-gray-400">{stat.label}</div>
               </div>
             ))}
           </div>
 
           {/* About Content */}
           <div
-            className="glass-effect p-8 rounded-2xl mb-8"
+            className="glass-effect p-4 md:p-8 rounded-2xl mb-6 md:mb-8"
           >
-            <h2 className="text-3xl font-bold text-glow mb-6">About Me</h2>
-            <div className="space-y-4 text-gray-300 leading-relaxed">
+            <h2 className="text-2xl md:text-3xl font-bold text-glow mb-4 md:mb-6">About Me</h2>
+            <div className="space-y-3 md:space-y-4 text-sm md:text-base text-gray-300 leading-relaxed">
               <p>
                 Hi! I'm Kartik Bhat, a passionate Full-Stack Developer pursuing B.Tech in Computer Science 
                 at Bennett University. I specialize in building scalable web applications, serverless architectures, 
@@ -72,14 +72,14 @@ export function About() {
 
           {/* Skills Section */}
           <div
-            className="glass-effect p-8 rounded-2xl"
+            className="glass-effect p-4 md:p-8 rounded-2xl"
           >
-            <h2 className="text-3xl font-bold text-glow mb-6">Technical Skills</h2>
+            <h2 className="text-2xl md:text-3xl font-bold text-glow mb-4 md:mb-6">Technical Skills</h2>
             
-            <div className="space-y-6">
+            <div className="space-y-4 md:space-y-6">
               {Object.entries(skills).map(([category, items]) => (
                 <div key={category}>
-                  <h3 className="text-lg font-semibold text-blue-300 mb-3 capitalize">
+                  <h3 className="text-base md:text-lg font-semibold text-blue-300 mb-2 md:mb-3 capitalize">
                     {category.replace(/([A-Z])/g, ' $1').trim()}
                   </h3>
                   <div className="flex flex-wrap gap-2">

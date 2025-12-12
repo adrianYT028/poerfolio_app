@@ -40,8 +40,8 @@ function App() {
       )}
 
       {/* Top Navigation Menu */}
-      <div className="fixed top-6 right-6 z-50 pointer-events-auto">
-        <div className="glass-effect rounded-xl p-2 flex gap-2">
+      <div className="fixed top-3 md:top-6 right-3 md:right-6 z-50 pointer-events-auto">
+        <div className="glass-effect rounded-lg md:rounded-xl p-1.5 md:p-2 flex gap-1 md:gap-2">
           {(['home', 'about', 'experience', 'contact'] as View[]).map((view) => (
             <button
               key={view}
@@ -49,7 +49,7 @@ function App() {
                 setCurrentView(view);
                 setSelectedProject(null);
               }}
-              className={`px-4 py-2 rounded-lg transition-all capitalize text-sm ${
+              className={`px-2 md:px-4 py-1.5 md:py-2 rounded-md md:rounded-lg transition-all capitalize text-xs md:text-sm ${
                 currentView === view
                   ? 'bg-blue-500/30 text-white'
                   : 'text-gray-400 hover:text-white hover:bg-white/10'

@@ -3,6 +3,19 @@ import { motion } from 'framer-motion';
 export function Experience() {
   const experiences = [
     {
+      title: 'Data Analyst Intern',
+      company: 'Oasis Infobyte',
+      period: 'Apr 2024 - May 2024',
+      type: 'Internship',
+      description: 'Analyzed datasets and developed data-driven solutions for business insights, working with Python and data visualization tools.',
+      technologies: ['Python', 'Data Analysis', 'Pandas', 'Visualization'],
+      achievements: [
+        'Analyzed large datasets to extract meaningful insights',
+        'Created data visualization dashboards',
+        'Improved data processing efficiency'
+      ]
+    },
+    {
       title: 'Freelance Full-Stack Developer',
       company: 'SrajanVastu',
       period: 'Oct 2024 - Nov 2024',
@@ -56,17 +69,17 @@ export function Experience() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="glass-effect p-8 rounded-2xl"
+            className="glass-effect p-4 md:p-8 rounded-2xl"
           >
-            <h2 className="text-3xl font-bold text-glow mb-6">Education</h2>
+            <h2 className="text-2xl md:text-3xl font-bold text-glow mb-6">Education</h2>
             
-            <div className="border-l-2 border-blue-400/30 pl-6">
-              <div className="flex items-start gap-4 mb-4">
-                <div className="text-4xl">🎓</div>
+            <div className="border-l-2 border-blue-400/30 pl-4 md:pl-6">
+              <div className="flex items-start gap-3 md:gap-4 mb-4">
+                <div className="text-3xl md:text-4xl">🎓</div>
                 <div className="flex-1">
-                  <h3 className="text-xl font-bold text-white mb-1">{education.degree}</h3>
-                  <div className="text-blue-300 font-medium mb-1">{education.institution}</div>
-                  <div className="text-sm text-gray-400 mb-3">
+                  <h3 className="text-lg md:text-xl font-bold text-white mb-1">{education.degree}</h3>
+                  <div className="text-blue-300 font-medium mb-1 text-sm md:text-base">{education.institution}</div>
+                  <div className="text-xs md:text-sm text-gray-400 mb-3">
                     {education.location} • {education.period}
                   </div>
                   <ul className="space-y-2">
@@ -87,9 +100,9 @@ export function Experience() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
-            className="glass-effect p-8 rounded-2xl"
+            className="glass-effect p-4 md:p-8 rounded-2xl"
           >
-            <h2 className="text-3xl font-bold text-glow mb-6">Experience & Research</h2>
+            <h2 className="text-2xl md:text-3xl font-bold text-glow mb-6">Experience & Research</h2>
             
             <div className="space-y-8">
               {experiences.map((exp, index) => (
@@ -98,22 +111,22 @@ export function Experience() {
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: 0.5 + index * 0.1 }}
-                  className="border-l-2 border-purple-400/30 pl-6 relative"
+                  className="border-l-2 border-purple-400/30 pl-4 md:pl-6 relative"
                 >
-                  <div className="absolute -left-2 top-0 w-4 h-4 bg-purple-500 rounded-full"></div>
+                  <div className="absolute -left-2 top-0 w-3 h-3 md:w-4 md:h-4 bg-purple-500 rounded-full"></div>
                   
                   <div className="mb-2">
                     <div className="flex items-start justify-between flex-wrap gap-2 mb-1">
-                      <h3 className="text-xl font-bold text-white">{exp.title}</h3>
-                      <span className="px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full text-xs">
+                      <h3 className="text-lg md:text-xl font-bold text-white">{exp.title}</h3>
+                      <span className="px-2 md:px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full text-xs">
                         {exp.type}
                       </span>
                     </div>
-                    <div className="text-blue-300 font-medium mb-1">{exp.company}</div>
-                    <div className="text-sm text-gray-400 mb-3">{exp.period}</div>
+                    <div className="text-blue-300 font-medium mb-1 text-sm md:text-base">{exp.company}</div>
+                    <div className="text-xs md:text-sm text-gray-400 mb-3">{exp.period}</div>
                   </div>
 
-                  <p className="text-gray-300 mb-4">{exp.description}</p>
+                  <p className="text-gray-300 mb-4 text-sm md:text-base">{exp.description}</p>
 
                   <div className="mb-4">
                     <h4 className="text-sm font-semibold text-gray-400 mb-2">Key Achievements:</h4>
@@ -147,15 +160,15 @@ export function Experience() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6 }}
-            className="glass-effect p-8 rounded-2xl"
+            className="glass-effect p-4 md:p-8 rounded-2xl"
           >
-            <h2 className="text-2xl font-bold text-glow mb-4">Open Source Contributions</h2>
-            <div className="flex items-center justify-between">
+            <h2 className="text-2xl font-bold text-glow mb-4">Contributions</h2>
+            <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
               <div>
-                <p className="text-gray-300 mb-2">
+                <p className="text-gray-300 mb-2 text-sm md:text-base">
                   Active contributor with <span className="text-blue-300 font-bold">350+</span> contributions in the last year
                 </p>
-                <p className="text-sm text-gray-400">
+                <p className="text-xs md:text-sm text-gray-400">
                   <span className="text-green-400">44 repositories</span> • Focus on web development, ML, and system design
                 </p>
               </div>
@@ -163,7 +176,7 @@ export function Experience() {
                 href="https://github.com/adrianYT028"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-4 py-2 bg-white/5 hover:bg-white/10 rounded-lg transition-all text-sm"
+                className="px-4 py-2 bg-white/5 hover:bg-white/10 rounded-lg transition-all text-sm whitespace-nowrap"
               >
                 View GitHub →
               </a>

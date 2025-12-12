@@ -86,18 +86,18 @@ export function Contact() {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          className="max-w-5xl w-full grid md:grid-cols-2 gap-8 pointer-events-auto"
+          className="max-w-5xl w-full grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 pointer-events-auto"
         >
           {/* Contact Info */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.2 }}
-            className="space-y-6"
+            className="space-y-4 md:space-y-6"
           >
-            <div className="glass-effect p-8 rounded-2xl">
-              <h2 className="text-3xl font-bold text-glow mb-4">Get In Touch</h2>
-              <p className="text-gray-300 mb-8">
+            <div className="glass-effect p-4 md:p-8 rounded-2xl">
+              <h2 className="text-2xl md:text-3xl font-bold text-glow mb-3 md:mb-4">Get In Touch</h2>
+              <p className="text-sm md:text-base text-gray-300 mb-6 md:mb-8">
                 I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. 
                 Feel free to reach out through any of these channels!
               </p>
@@ -115,22 +115,22 @@ export function Contact() {
                         href={method.link}
                         target={method.link.startsWith('http') ? '_blank' : undefined}
                         rel={method.link.startsWith('http') ? 'noopener noreferrer' : undefined}
-                        className="flex items-center gap-4 p-4 bg-white/5 hover:bg-white/10 rounded-xl transition-all group"
+                        className="flex items-center gap-3 md:gap-4 p-3 md:p-4 bg-white/5 hover:bg-white/10 rounded-xl transition-all group"
                       >
-                        <span className="text-3xl">{method.icon}</span>
+                        <span className="text-2xl md:text-3xl">{method.icon}</span>
                         <div>
-                          <div className="text-sm text-gray-400">{method.title}</div>
-                          <div className="text-white group-hover:text-blue-300 transition-colors">
+                          <div className="text-xs md:text-sm text-gray-400">{method.title}</div>
+                          <div className="text-sm md:text-base text-white group-hover:text-blue-300 transition-colors break-all">
                             {method.value}
                           </div>
                         </div>
                       </a>
                     ) : (
-                      <div className="flex items-center gap-4 p-4 bg-white/5 rounded-xl">
-                        <span className="text-3xl">{method.icon}</span>
+                      <div className="flex items-center gap-3 md:gap-4 p-3 md:p-4 bg-white/5 rounded-xl">
+                        <span className="text-2xl md:text-3xl">{method.icon}</span>
                         <div>
-                          <div className="text-sm text-gray-400">{method.title}</div>
-                          <div className="text-white">{method.value}</div>
+                          <div className="text-xs md:text-sm text-gray-400">{method.title}</div>
+                          <div className="text-sm md:text-base text-white">{method.value}</div>
                         </div>
                       </div>
                     )}
@@ -145,13 +145,13 @@ export function Contact() {
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.4 }}
-            className="glass-effect p-8 rounded-2xl"
+            className="glass-effect p-4 md:p-8 rounded-2xl"
           >
-            <h2 className="text-2xl font-bold text-glow mb-6">Send a Message</h2>
+            <h2 className="text-xl md:text-2xl font-bold text-glow mb-4 md:mb-6">Send a Message</h2>
             
-            <form onSubmit={handleSubmit} className="space-y-4">
+            <form onSubmit={handleSubmit} className="space-y-3 md:space-y-4">
               <div>
-                <label htmlFor="name" className="block text-sm text-gray-400 mb-2">
+                <label htmlFor="name" className="block text-xs md:text-sm text-gray-400 mb-2">
                   Your Name *
                 </label>
                 <input
