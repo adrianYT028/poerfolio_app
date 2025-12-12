@@ -3,16 +3,17 @@ import { motion } from 'framer-motion';
 export function Experience() {
   const experiences = [
     {
-      title: 'Data Analyst Intern',
-      company: 'Oasis Infobyte',
-      period: 'Apr 2024 - May 2024',
+      title: 'Web Development Intern',
+      company: 'Medoc Health IT Pvt Ltd',
+      period: 'Jan 2025 - Apr 2025',
       type: 'Internship',
-      description: 'Analyzed datasets and developed data-driven solutions for business insights, working with Python and data visualization tools.',
-      technologies: ['Python', 'Data Analysis', 'Pandas', 'Visualization'],
+      description: 'Developed React.js analytics dashboard and optimized backend APIs for healthcare IT solutions in a remote collaborative environment.',
+      technologies: ['React.js', 'Node.js', 'MongoDB', 'REST APIs'],
       achievements: [
-        'Analyzed large datasets to extract meaningful insights',
-        'Created data visualization dashboards',
-        'Improved data processing efficiency'
+        'Built analytics dashboard that accelerated reporting by 35%',
+        'Empowered 5+ client teams with faster insights',
+        'Refactored backend APIs, cutting latency by 40%',
+        'Reduced server costs by 15% through optimization'
       ]
     },
     {
