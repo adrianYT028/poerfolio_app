@@ -29,7 +29,7 @@ export function About() {
         >
           {/* Stats Grid */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-            {stats.map((stat, index) => (
+            {stats.map((stat) => (
               <div
                 key={stat.label}
                 className="glass-effect p-6 rounded-xl text-center"
