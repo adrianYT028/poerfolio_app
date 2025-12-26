@@ -72,6 +72,12 @@ export function Contact() {
       link: 'https://github.com/adrianYT028'
     },
     {
+      icon: '🔢',
+      title: 'LeetCode',
+      value: 'kartik-adrian',
+      link: 'https://leetcode.com/u/kartik-adrian/'
+    },
+    {
       icon: '📍',
       title: 'Location',
       value: 'Greater Noida, India',

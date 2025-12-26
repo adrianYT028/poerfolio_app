@@ -156,11 +156,39 @@ export function Experience() {
             </div>
           </motion.div>
 
-          {/* GitHub Activity */}
+          {/* LeetCode Stats */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6 }}
+            className="glass-effect p-4 md:p-8 rounded-2xl"
+          >
+            <h2 className="text-2xl font-bold text-glow mb-4">Competitive Programming</h2>
+            <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
+              <div>
+                <p className="text-gray-300 mb-2 text-sm md:text-base">
+                  <span className="text-yellow-400 font-bold">Knight</span> on LeetCode with <span className="text-blue-300 font-bold">550+</span> problems solved
+                </p>
+                <p className="text-xs md:text-sm text-gray-400">
+                  <span className="text-orange-400">Strong problem-solving skills</span> • Data structures, algorithms, and optimization
+                </p>
+              </div>
+              <a
+                href="https://leetcode.com/u/kartik-adrian/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-4 py-2 bg-white/5 hover:bg-white/10 rounded-lg transition-all text-sm whitespace-nowrap"
+              >
+                View LeetCode →
+              </a>
+            </div>
+          </motion.div>
+
+          {/* GitHub Activity */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.7 }}
             className="glass-effect p-4 md:p-8 rounded-2xl"
           >
             <h2 className="text-2xl font-bold text-glow mb-4">Contributions</h2>
