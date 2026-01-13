@@ -3,6 +3,20 @@ import { motion } from 'framer-motion';
 export function Experience() {
   const experiences = [
     {
+      title: 'Open-Source Contributor',
+      company: 'Rocket.Chat',
+      period: 'Dec 2025 - Present',
+      type: 'Open Source',
+      description: 'Architected a full stack "Reminder Bot" using the Rocket.Chat Apps Engine, implementing Slash Commands and interactive UI Kit Modals to enhance user workflow.',
+      technologies: ['TypeScript', 'MongoDB', 'Rocket.Chat Apps Engine', 'UI Kit'],
+      achievements: [
+        'Built full-stack Reminder Bot with Slash Commands and UI Kit Modals',
+        'Refactored core system logic to fix user-counting discrepancies',
+        'Implemented scalable data handling using TypeScript and MongoDB',
+        'Enhanced platform reliability and user workflow automation'
+      ]
+    },
+    {
       title: 'Web Development Intern',
       company: 'Medoc Health IT Pvt Ltd',
       period: 'Jan 2025 - Apr 2025',
