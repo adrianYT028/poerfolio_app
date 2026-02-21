@@ -3,6 +3,18 @@ import { motion } from 'framer-motion';
 export function Experience() {
   const experiences = [
     {
+      title: 'Software Engineering Virtual Experience',
+      company: 'Electronic Arts',
+      period: 'Recent',
+      type: 'Virtual Experience',
+      description: 'Participated in EA\'s Software Engineering virtual experience program, contributing to EA Sports College Football through feature proposals and code optimizations.',
+      technologies: ['Software Engineering', 'Feature Design', 'Data Structures', 'Code Optimization'],
+      achievements: [
+        'Proposed a new feature for EA Sports College Football with comprehensive Feature Proposal documentation for stakeholders',
+        'Patched bugfix and optimized EA Sports College Football codebase by implementing an improved data structure'
+      ]
+    },
+    {
       title: 'Open-Source Contributor',
       company: 'Rocket.Chat',
       period: 'Dec 2025 - Present',

@@ -46,7 +46,7 @@ export function Hero() {
             Contact Me
           </a>
           <a 
-            href="/Kartik Resume.pdf"
+            href="/KartikBhat Resume .pdf"
             download="Kartik_Bhat_Resume.pdf"
             className="px-5 py-2 bg-white/10 hover:bg-white/20 rounded-lg backdrop-blur-sm border border-white/20 transition-all text-sm md:text-base"
           >
